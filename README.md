@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+# Backend Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, minimalist portfolio site built with React that displays resume data in a beautiful JSON viewer interface.
 
-## Available Scripts
+![Portfolio Preview](./src/assets/preview.png)
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+- Interactive JSON-based resume display
+- Developer mode for raw JSON viewing
+- Copy resume data with a single click
+- Dark/Light mode support
+- Responsive design that works on all devices
+- Search functionality to quickly find specific details
+- Live timestamp updates in Jakarta timezone
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React, JavaScript
+- **Styling**: Tailwind CSS
+- **Data Handling**: Custom hooks for live updates
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js (v14+)
+- npm or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/alif-arrizqy/backend-portfolio.git
+   cd backend-portfolio
+   ```
 
-### `npm run eject`
+2. Install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm run start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Open your browser and navigate to `http://localhost:5173`
 
-## Learn More
+## 📦 Building for Production
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To create a production build:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
 
-### Code Splitting
+Running the production build:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run start
+```
 
-### Analyzing the Bundle Size
+## 📂 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+backend-portfolio/
+├── public/
+│   ├── favicon.ico
+│   ├── robots.txt
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Header.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── Layout.jsx
+│   │   ├── ui/
+│   │   │   ├── Button.jsx
+│   │   │   ├── SearchBar.jsx
+│   │   │   └── ThemeToggle.jsx
+│   │   ├── portfolio/
+│   │   │   ├── JSONNode.jsx
+│   │   │   ├── PortfolioViewer.jsx
+│   │   │   └── DevModeToggle.jsx
+│   │   └── index.js
+│   ├── data/
+│   │   └── portfolioData.js
+│   ├── hooks/
+│   │   ├── useTheme.js
+│   │   └── useLiveUpdate.js
+│   ├── styles/
+│   │   └── globals.css
+│   ├── utils/
+│   │   └── formatters.js
+│   ├── App.jsx
+│   └── index.js
+├── .gitignore
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
 
-### Making a Progressive Web App
+## 🧪 Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To use this for your own portfolio:
 
-### Advanced Configuration
+1. Edit the `src/data/portfolioData.js` file with your information
+2. Customize colors and styling in the components
+3. Update metadata and favicon in the public directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔧 Key Features Explanation
 
-### Deployment
+### JSON Viewer
+The portfolio displays your resume data in an interactive JSON format that allows users to collapse and expand sections.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Dev Mode
+Toggle between a user-friendly view and raw JSON display for developers.
 
-### `npm run build` fails to minify
+### Live Updates
+The portfolio shows when the data was last updated with accurate Jakarta timezone.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Search Functionality
+Quickly find specific information within your extensive portfolio data.
+
+## 👤 Author
+
+- **Alif Ayatulloh Arrizqy** - [alif-arrizqy](https://github.com/alif-arrizqy)
+```
+
+This README provides a comprehensive overview of your project, including features, tech stack, setup instructions, and customization guidance. Feel free to adjust any details to better match your specific implementation!
+
+Enjoy code! ☕
