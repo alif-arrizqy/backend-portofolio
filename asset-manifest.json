@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/backend-portfolio/static/css/main.2fc45ca3.css",
+    "main.js": "/backend-portfolio/static/js/main.df927703.js",
+    "index.html": "/backend-portfolio/index.html",
+    "main.2fc45ca3.css.map": "/backend-portfolio/static/css/main.2fc45ca3.css.map",
+    "main.df927703.js.map": "/backend-portfolio/static/js/main.df927703.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fc45ca3.css",
+    "static/js/main.df927703.js"
+  ]
+}
