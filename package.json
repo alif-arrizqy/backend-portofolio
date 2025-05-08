@@ -12,7 +12,8 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://alif-arrizqy.github.io/backend-portfolio",  "scripts": {
+  "homepage": "https://alif-arrizqy.github.io/backend-portofolio",
+  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
